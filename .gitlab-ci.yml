@@ -5,6 +5,6 @@ build_1:
     - sudo apt-get --assume-yes install software-properties-common
     - sudo add-apt-repository ppa:lyzardking/ubuntu-make
     - sudo apt-get update
-    - sudo apt-get install ubuntu-make
+    - sudo apt-get --assume-yes install ubuntu-make
     - umake android android-sdk
   
