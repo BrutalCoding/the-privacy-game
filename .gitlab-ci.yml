@@ -1,5 +1,8 @@
+stages:
+  - download_and_install
+  - build_apk
 install_tools_etc:
-  stage: build
+  stage: download_and_install
   script:
     - echo "Installing software-properties-common."
     - sudo apt-get --assume-yes install software-properties-common
@@ -9,4 +12,8 @@ install_tools_etc:
     - echo "\android-sdk" | umake android android-sdk --accept-license
     - echo "\dart" | umake dart
     - mkdir "dev"
+    - mkdir "flutter"
+    - git clone -b master --depth 1 https://github.com/flutter/flutter.git flutter
+    - cd "flutter"
+    - ls
   
