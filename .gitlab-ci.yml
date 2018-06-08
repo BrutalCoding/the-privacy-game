@@ -1,8 +1,9 @@
-#image: martinlowinski/flutter-android-sdk
+#image: martinlowinski/flutter-android-sdk not working
+image: mattclark/flutter-build-docker
 testing:
   stage: build
   script:
   - ls
   - echo "Building the APK"
-  - cd / && flutter build apk
+  - flutter build apk
   - echo "Done building the APK"
