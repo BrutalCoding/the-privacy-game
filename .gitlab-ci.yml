@@ -1,9 +1,5 @@
-#image: martinlowinski/flutter-android-sdk not working
-image: mattclark/flutter-build-docker
-testing:
+build_android_image_alpha:
   stage: build
   script:
-  - ls
-  - echo "Building the APK"
-  - flutter build apk
-  - echo "Done building the APK"
+    - sudo apt-get install ubuntu-make
+    - umake android android-sdk
