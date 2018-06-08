@@ -1,5 +1,5 @@
 install_tools_etc:
-  stage: downloading_and_installing
+  stage: build
   script:
     - echo "Installing software-properties-common."
     - sudo apt-get --assume-yes install software-properties-common
