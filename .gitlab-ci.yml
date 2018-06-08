@@ -1,4 +1,5 @@
 pages:
   stage: deploy
   script:
-  - mkdir .public
+  - echo "Building the APK"
+  - flutter build apk
