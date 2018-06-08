@@ -1,5 +1,5 @@
-build_1:
-  stage: build
+install_tools_etc:
+  stage: downloading_and_installing
   script:
     - echo "Installing software-properties-common."
     - sudo apt-get --assume-yes install software-properties-common
@@ -8,4 +8,5 @@ build_1:
     - sudo apt-get --assume-yes install ubuntu-make
     - echo "\android-sdk" | umake android android-sdk --accept-license
     - echo "\dart" | umake dart
+    - mkdir "dev"
   
