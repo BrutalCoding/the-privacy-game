@@ -1,7 +1,8 @@
-image: martinlowinski/flutter-android-sdk
-pages:
-  stage: deploy
+#image: martinlowinski/flutter-android-sdk
+testing:
+  stage: build
   script:
+  - ls
   - echo "Building the APK"
-  - flutter build apk
+  - cd / && flutter build apk
   - echo "Done building the APK"
