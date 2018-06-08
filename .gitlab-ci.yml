@@ -3,4 +3,8 @@ build_1:
   script:
     - echo "Installing software-properties-common."
     - sudo apt-get --assume-yes install software-properties-common
+    - sudo add-apt-repository ppa:lyzardking/ubuntu-make
+    - sudo apt-get update
+    - sudo apt-get install ubuntu-make
+    - umake android android-sdk
   
