@@ -1,4 +1,3 @@
-image
 build_android_image_alpha:
   stage: build
   script:
