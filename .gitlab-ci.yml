@@ -7,5 +7,5 @@ build_1:
     - sudo apt-get update
     - sudo apt-get --assume-yes install ubuntu-make
     - echo "\android-sdk" | umake android android-sdk --accept-license
-    - echo "\android-sdk" | umake dart
+    - echo "\dart" | umake dart
   
