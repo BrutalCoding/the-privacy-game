@@ -6,6 +6,6 @@ build_1:
     - sudo add-apt-repository ppa:lyzardking/ubuntu-make
     - sudo apt-get update
     - sudo apt-get --assume-yes install ubuntu-make
-    - . enable_completion
+    - enable_completion
     - umake android
   
