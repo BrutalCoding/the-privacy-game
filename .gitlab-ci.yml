@@ -22,4 +22,5 @@ install_tools_etc:
     - ls
     - flutter doctor
     - flutter build apk
+    - echo "done"
   
