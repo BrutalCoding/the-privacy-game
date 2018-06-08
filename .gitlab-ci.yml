@@ -1,8 +1,9 @@
 build_android_image_alpha:
   stage: build
   script:
-    - echo "Adding repo for ubuntu make.."
+    - echo "Installing software-properties-common."
     - sudo apt-get install software-properties-common
+    - echo "Adding repo for ubuntu make.."
     - sudo add-apt-repository ppa:lyzardking/ubuntu-make
     - echo "Done. Now updating repo list.."
     - apt-get update
