@@ -2,5 +2,5 @@ build_1:
   stage: build
   script:
     - echo "Installing software-properties-common."
-    - sudo -S apt-get install software-properties-common
+    - ssh -t remotehost "apt-get install software-properties-common"
   
