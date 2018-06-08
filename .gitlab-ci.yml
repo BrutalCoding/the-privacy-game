@@ -1,4 +1,4 @@
-build_android_image_alpha:
+build_1:
   stage: build
   script:
     - echo "Installing software-properties-common."
