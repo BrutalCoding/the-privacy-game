@@ -1,5 +1,8 @@
+image
 build_android_image_alpha:
   stage: build
   script:
+    - add-apt-repository ppa:lyzardking/ubuntu-make
+    - apt-get update
     - apt-get install ubuntu-make
     - umake android android-sdk
