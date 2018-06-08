@@ -3,11 +3,4 @@ build_android_image_alpha:
   script:
     - echo "Installing software-properties-common."
     - sudo apt-get install software-properties-common
-    - echo "Adding repo for ubuntu make.."
-    - sudo add-apt-repository ppa:lyzardking/ubuntu-make
-    - echo "Done. Now updating repo list.."
-    - apt-get update
-    - echo "Done. Now installing ubuntu-make.."
-    - apt-get install ubuntu-make
-    - echo "Done. Now installing android-sdk with ubuntu-make."
-    - umake android android-sdk
+  
