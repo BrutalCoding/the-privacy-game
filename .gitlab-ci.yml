@@ -1,5 +1,7 @@
+image: martinlowinski/flutter-android-sdk
 pages:
   stage: deploy
   script:
   - echo "Building the APK"
   - flutter build apk
+  - echo "Done building the APK"
