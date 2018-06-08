@@ -11,9 +11,15 @@ install_tools_etc:
     - sudo apt-get --assume-yes install ubuntu-make
     - echo "\android-sdk" | umake android android-sdk --accept-license
     - echo "\dart" | umake dart
-    - mkdir "dev"
-    - mkdir "flutter"
+    
+    - mkdir "/dev"
+    - mkdir "/flutter"
     - git clone -b master --depth 1 https://github.com/flutter/flutter.git flutter
-    - cd "flutter"
+    - cd "/flutter"
     - ls
+    - export PATH=`pwd`/flutter/bin:$PATH
+    - cd "/"
+    - ls
+    - flutter doctor
+    - flutter build apk
   
